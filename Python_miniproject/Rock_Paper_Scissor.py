@@ -43,4 +43,4 @@ if lower_case in ('rock','paper','scissor'):
             print(f'Computer choice: PAPER')
             print('YOU WIN COMPUTER LOSE')
 else:
-    print('give the correct Chooice')
+    print('give the correct Choice')
