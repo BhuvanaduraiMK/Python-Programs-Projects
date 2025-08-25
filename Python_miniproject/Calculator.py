@@ -50,7 +50,7 @@ while True:
             print(num1,"**",num2,'=',power(num1,num2))
         
         next_calculate = input('Let\'s do a calculater(Yes/No): ')
-        while True:
+        while True:                                      # Reason for using While loop USER only put YES/NO if put any another word again raise the YES/NO question 
             if next_calculate in ('yes','YES','y','Y','Yes'):
                 break
             elif next_calculate in ('no','NO','n','N','No'):
