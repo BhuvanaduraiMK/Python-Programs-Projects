@@ -49,12 +49,18 @@ while True:
         elif choice == 7:
             print(num1,"**",num2,'=',power(num1,num2))
         
+        next_calculate = input('Let\'s do a calculater(Yes/No): ')
         while True:
-            next_calculate = input('Let\'s do a calculater(Yes/No): ')
             if next_calculate in ('yes','YES','y','Y','Yes'):
                 break
             elif next_calculate in ('no','NO','n','N','No'):
                 break
+            next_calculate = input('Let\'s do a calculater(Yes/No): ')
+        if next_calculate in ('yes','YES','y','Y','Yes'):
+            continue
+        else:
+            break
+        
     elif choice == 8:
         try:
             num1 = float(input('Enter a num1 value:'))
@@ -62,12 +68,18 @@ while True:
             print('Invalid number, put number only')
         if choice == 8:
             print(num1,"sqrt root", sqr(num1))
+        
+        next_calculate = input('Let\'s do a calculater(Yes/No): ')
         while True:
-            next_calculate = input('Let\'s do a calculater(Yes/No): ')
             if next_calculate in ('yes','YES','y','Y','Yes'):
                 break
             elif next_calculate in ('no','NO','n','N','No'):
                 break
+            next_calculate = input('Let\'s do a calculater(Yes/No): ')
+        if next_calculate in ('yes','YES','y','Y','Yes'):
+            continue
+        else:
+            break
             
     else: 
         print('Invalid value')
