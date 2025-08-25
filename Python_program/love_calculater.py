@@ -1,3 +1,5 @@
+# count the number of t r u e l o v e words in your name and give the percentage EX: ( true 2, love 4-- 24 %)
+
 name_1 = input('enter a name: ')
 name_2 = input('enter a name: ')
 combine_name = name_1+name_2
