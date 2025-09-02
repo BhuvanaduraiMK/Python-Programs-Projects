@@ -1,3 +1,5 @@
+# choose your position in 3X3 matrix put the 'X' sign 
+
 Matrix = [[1,1,1],[1,1,1],[1,1,1]]
 print(Matrix)
 Position = input("Enter the Position where you want to put X mark: ")
