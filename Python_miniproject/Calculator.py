@@ -67,7 +67,7 @@ while True:
             next_calculate = input('Let\'s do a calculater(Yes/No): ')
         if next_calculate in ('yes','YES','y','Y','Yes'):
             continue
-        else:
+        elif next_calculate in ('no', 'NO', 'n', 'N', 'No'):
             break
             
     else: 
