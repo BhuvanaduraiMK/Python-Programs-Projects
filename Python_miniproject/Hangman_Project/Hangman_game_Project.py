@@ -20,25 +20,24 @@ game_over = False
 print(Hangman_stages.Stages[lives])
 
 while not game_over:
-    guessed_word = input('Guess a word: ').lower()
-    print(Hangman_stages.Stages[lives])
-    for i in range(len(choosen_word)):
-        letter = choosen_word[i]
-        if letter == guessed_word:
-            display[i] = guessed_word
-    print(display)
-
-    if guessed_word not in choosen_word:
-        lives -= 1
-        print(f"You guessed '{guessed_word}' that is not present in the world, So you lose the {6-lives} life remaining you have {lives} live only")
+    guessed_word = input('Guess a word (Enter single character): ').lower()
+    print(topic)
+    for i in range(len(guessed_word),2):
         print(Hangman_stages.Stages[lives])
-        if lives == 0:
+        for i in range(len(choosen_word)):
+            letter = choosen_word[i]
+            if letter == guessed_word:
+                display[i] = guessed_word
+        print(display)
+        if guessed_word not in choosen_word:
+            lives -= 1
+            print(f"You guessed '{guessed_word}' letter. this is not present in the word, So you lose the {6-lives} life remaining you have {lives} live only")
+            print(Hangman_stages.Stages[lives])
+            if lives == 0:
+                game_over = True
+                print('YOU LOSE BETTER LUCK NEXT TIME')
+        if '_' not in display:
             game_over = True
-            print('YOU LOSE BETTER LUCK NEXT TIME')
+            print(Hangman_stages.Stages[lives])
+            print('Excellent!You find the Letter You win!!'.upper())
             
-
-    if '_' not in display:
-        game_over = True
-        print(Hangman_stages.Stages[lives])
-        print('Excellent!You find the Letter You win!!'.upper())
-
